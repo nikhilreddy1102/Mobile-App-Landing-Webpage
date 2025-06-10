@@ -1,192 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Mobile App Landing Page | Nikhil Reddy</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
-  * {
-    margin: 0; padding: 0; box-sizing: border-box;
-  }
-  body {
-    font-family: 'Poppins', sans-serif;
-    background: #f0f0f5;
-    color: #222;
-    min-height: 100vh;
-  }
-  header {
-    background: #007aff; /* iOS blue */
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
-    color: white;
-  }
-  header h1 {
-    font-weight: 600;
-    font-size: 1.75rem;
-  }
-  nav a {
-    color: white;
-    margin-left: 1.5rem;
-    font-weight: 600;
-    text-decoration: none;
-    position: relative;
-  }
-  nav a:hover, nav a.active {
-    text-decoration: underline;
-  }
-  main {
-    padding: 2rem;
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  section {
-    display: none;
-    animation: fadeIn 0.5s ease forwards;
-  }
-  section.active {
-    display: block;
-  }
-  h2 {
-    color: #007aff;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #007aff;
-    padding-bottom: 0.3rem;
-  }
-  p {
-    font-weight: 400;
-    font-size: 1.1rem;
-    margin-bottom: 1.2rem;
-  }
-  /* Apps grid like iPhone home screen */
-  .apps-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    gap: 30px 25px;
-    justify-items: center;
-    padding: 1rem 0;
-  }
-  .app {
-    width: 80px;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  .app img {
-    width: 70px;
-    height: 70px;
-    border-radius: 20px; /* iOS-style rounded corners */
-    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-    object-fit: cover;
-  }
-  .app:hover {
-    transform: scale(1.1);
-  }
-  .app-label {
-    margin-top: 6px;
-    font-weight: 500;
-    font-size: 0.9rem;
-    color: #444;
-  }
-  /* Contact */
-  .contact-info {
-    font-weight: 400;
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-  /* Animations */
-  @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
-  footer {
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
-    color: #888;
-    background: #eaeaea;
-    margin-top: 3rem;
-  }
-</style>
-</head>
-<body>
+# Mobile App Landing Page
 
-<header>
-  <h1>Nikhil Reddy</h1>
-  <nav>
-    <a href="#" class="nav-link active" data-target="home">Home</a>
-    <a href="#" class="nav-link" data-target="about">About</a>
-    <a href="#" class="nav-link" data-target="apps">Apps</a>
-    <a href="#" class="nav-link" data-target="contact">Contact</a>
-  </nav>
-</header>
+## Role & Responsibilities  
+- Designed and developed a multi-page responsive mobile app landing website simulating an iPhone home screen experience.  
+- Created a clean, user-friendly UI with intuitive navigation across Home, About, Apps, and Contact sections.  
+- Integrated interactive app icons with real logos linking to official social media sites (Snapchat, Instagram, YouTube).  
+- Used semantic HTML5 and CSS3 Grid/Flexbox for layout and styling, ensuring responsiveness and accessibility.  
+- Implemented vanilla JavaScript for dynamic page navigation without full reloads, providing smooth user experience.  
+- Managed project version control and deployed the site via GitHub Pages.
 
-<main>
-  <section id="home" class="active">
-    <h2>Welcome to the Mobile App Landing Page</h2>
-    <p>This landing page highlights the key features and mimics an iPhone home screen style with your favorite apps.</p>
-    <p>Click the tabs above to explore more sections.</p>
-  </section>
+## Goal  
+To build a modern, visually appealing, and functional mobile app landing website that showcases popular social media apps in a realistic iPhone-style layout. The site should be easy to navigate, responsive on all devices, and provide clear access to official app websites.
 
-  <section id="about">
-    <h2>About This Project</h2>
-    <p>This project showcases a multi-page layout using only HTML, CSS, and vanilla JavaScript.</p>
-    <p>The goal is to create a responsive, user-friendly landing page with interactive navigation and app icons styled like an iPhone home screen.</p>
-  </section>
+## Outcome  
+- Successfully created a multi-page website with a clean, light-themed design and intuitive navigation bar.  
+- Delivered a fully responsive layout adapting smoothly to different screen sizes and devices.  
+- Incorporated clickable app icons with crisp logos that open official app pages in new browser tabs.  
+- Enhanced user engagement with interactive UI elements and consistent visual styling.  
+- Published the site live on GitHub Pages for public access.
 
-  <section id="apps">
-    <h2>Popular Social Media Apps</h2>
-    <div class="apps-container">
-      <a href="https://www.snapchat.com" target="_blank" rel="noopener" class="app" title="Snapchat">
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Snapchat_logo.svg/1200px-Snapchat_logo.svg.png" alt="Snapchat" />
-        <div class="app-label">Snapchat</div>
-      </a>
-      <a href="https://www.instagram.com" target="_blank" rel="noopener" class="app" title="Instagram">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1024px-Instagram_logo_2016.svg.png" alt="Instagram" />
-        <div class="app-label">Instagram</div>
-      </a>
-      <a href="https://www.youtube.com" target="_blank" rel="noopener" class="app" title="YouTube">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube" />
-        <div class="app-label">YouTube</div>
-      </a>
-    </div>
-  </section>
+## Impact  
+- Provided a professional and engaging digital prototype useful for showcasing mobile app concepts or marketing ideas.  
+- Improved user understanding of app offerings and quick access to relevant platforms, simulating a familiar device interface.  
+- Demonstrated frontend development skills including layout design, responsiveness, DOM manipulation, and deployment.
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p class="contact-info">
-      Email: <a href="mailto:kothapallynikhil2000@gmail.com">kothapallynikhil2000@gmail.com</a><br/>
-      Phone: +1 (123) 456-7890
-    </p>
-  </section>
-</main>
+## Technologies Used  
+- HTML5  
+- CSS3 (Grid, Flexbox, Animations)  
+- JavaScript (Vanilla)  
+- Google Fonts (Poppins)  
 
-<footer>
-  <p>© 2025 Nikhil Reddy Kothapally</p>
-</footer>
+## How to Use  
+1. Clone or download the repository to your local computer.  
+2. Open the `index.html` file with a modern web browser (Chrome, Firefox, Edge).  
+3. Use the navigation bar at the top to switch between Home, About, Apps, and Contact sections.  
+4. Click on any app icon to open the official website in a new tab.
 
-<script>
-  // Navigation link click handler for single page view
-  const navLinks = document.querySelectorAll('.nav-link');
-  const sections = document.querySelectorAll('main section');
+## Project Structure  
 
-  navLinks.forEach(link => {
-    link.addEventListener('click', e => {
-      e.preventDefault();
-      // Remove active class from all links and sections
-      navLinks.forEach(l => l.classList.remove('active'));
-      sections.forEach(s => s.classList.remove('active'));
+## Future Enhancements  
+- Add a backend-powered contact form for real inquiries.  
+- Implement smooth page transition animations.  
+- Expand app selection with user customization options.  
+- Create a mobile-friendly hamburger menu for small screen navigation.
 
-      // Add active class to clicked link and its target section
-      link.classList.add('active');
-      const target = link.getAttribute('data-target');
-      document.getElementById(target).classList.add('active');
-    });
-  });
-</script>
-
-</body>
-</html>
+## Author  
+Nikhil Reddy Kothapally  
+Email: kothapallynikhil2000@gmail.com  
